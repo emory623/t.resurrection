@@ -101,3 +101,52 @@
 // for(let i = 0; i < lines; i++){
     
 // }
+
+
+// function showFirstMessage(text){
+//     let num = 20; // local variable
+//     console.log(`${text}: ${num}`);
+// }
+
+// showFirstMessage('welcome');
+
+// num = 40;
+// console.log(num);
+
+// function ret(){ // fDeclaration - видна до объявления 
+//     let num = 50;
+    
+//     //
+
+//     return num;
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+// let data = function() { // fExpression - работает как переменная(не видна до объявления) 
+//     console.log(0)
+// };
+
+// const calc = (a, b) => a + b; // arrow function - dont have call context 
+
+// console.log(calc(8,9))
+
+// codewars
+
+const smash = words => words.join(` `); //cw 1
+
+const arr = [`ka`,`ki`,`ko`,`ku`];
+
+console.log(smash(arr))
+
+
+
+const squareDigits = num => { // cw 2
+    num = String(num).split('');
+    for(let i = 0; i < num.length; i++) num[i] =Math.pow(+num[i], 2);
+    return +num.join('');
+};
+let data = 555;
+
+console.log(squareDigits(data));
