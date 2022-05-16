@@ -228,3 +228,35 @@
 // const test = '12px';
 
 // console.log(parseInt(test));
+
+// console.log(Math.pow(5, 3)) volume
+// console.log(Math.pow(5, 2) * 6) area
+
+function calculationCube(edge){
+    if(edge === '' || edge <= 0 || isNaN(edge) || !Number.isInteger(edge)){
+        console.log(`При вычислении произошла ошибка...`);
+    }else{
+        console.log(`Объём куба: ${Math.pow(edge, 3)}, площадь всей поверхности: ${Math.pow(edge, 2)*6}`);
+    }
+}
+
+calculationCube(2.2);
+
+
+function getCoupeNumber(num) {
+    if(num < 0 || num == '' || isNaN(num) || !Number.isInteger(num)){
+        console.log(`Ошибка. Проверьте правильность введенного номера места`);
+    }else if(num == 0 || num > 36){
+        console.log(`Таких мест в вагоне не существует`);
+    }else if(num < 5) {console.log(1)}
+    else if(num < 9){console.log(2)}
+    else if(num < 13){console.log(3)}
+    else if(num < 17){console.log(4)}
+    else if(num < 21){console.log(5)}
+    else if(num < 25){console.log(6)}
+    else if(num < 29){console.log(7)}
+    else if(num < 33){console.log(8)}
+    else if(num < 37){console.log(9)}
+}
+
+getCoupeNumber(3);
