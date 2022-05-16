@@ -134,19 +134,97 @@
 
 // codewars
 
-const smash = words => words.join(` `); //cw 1
+// const smash = words => words.join(` `); //cw 1
 
-const arr = [`ka`,`ki`,`ko`,`ku`];
+// const arr = [`ka`,`ki`,`ko`,`ku`];
 
-console.log(smash(arr))
+// console.log(smash(arr))
 
 
 
-const squareDigits = num => { // cw 2
-    num = String(num).split('');
-    for(let i = 0; i < num.length; i++) num[i] =Math.pow(+num[i], 2);
-    return +num.join('');
-};
-let data = 555;
+// const squareDigits = num => { // cw 2
+//     num = String(num).split('');
+//     for(let i = 0; i < num.length; i++) num[i] =Math.pow(+num[i], 2);
+//     return +num.join('');
+// };
+// let data = 555;
 
-console.log(squareDigits(data));
+// console.log(squareDigits(data));
+
+// functionContinue(arguments&return)
+
+// const usdCurr = 70;
+// const discount = 0.5;
+
+// function convert(curr, amount){
+//     return curr * amount;
+// }
+
+// function promotion(result){
+//     console.log(result * discount);
+// }
+
+// const convertRes = convert(usdCurr, 5); // Intermediate Result
+
+// // promotion(convertRes);
+
+
+// function doNothing(){};
+// // console.log(doNothing() === undefined);
+
+// // Exercise 6 :function
+
+// function returnNeighboringNumbers(num) { // 2
+//     const arr = [num - 1, num, ++num];
+//     console.log(arr);
+// }
+// // returnNeighboringNumbers(3);
+
+
+// // function getMathResult(base, count) { // 3(fail)
+//     let res = `${base}`;
+//     for(let i = 1; i <= count; i++){
+//         res += `${+ base}`;
+//     }
+//     console.log(res);
+// }
+
+// getMathResult(2, 2);
+
+
+// function getMathResult(base, count){ // 10
+//     if(typeof(base) != 'number' || typeof(count) != 'number' || count <= 0 ){
+//         return base;
+//     }else{
+//         let res = base;
+//         for(let i = 2; i< count+1; i++){
+//             res += `--${base*i}`;
+//         }
+//         console.log(res);
+//     }
+// }
+
+// getMathResult(2,3)
+
+
+//input: 2,3
+//output: 2--4--6
+
+
+//stringMethods
+// const logg = 'hello world';
+
+// console.log(logg.slice(6, 11));
+
+// console.log(logg.substring(6, 11));
+
+// console.log(logg.substr(6, 5));
+
+// //numberMethod
+// const num = 12.2;
+
+// console.log(Math.round(num));
+
+// const test = '12px';
+
+// console.log(parseInt(test));
