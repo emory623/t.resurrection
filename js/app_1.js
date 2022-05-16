@@ -54,7 +54,7 @@ function showMyDB(){
     }
 }
 
-showMyDB();
+// showMyDB();
 
 function writeYourGenres(){
     for(let i = 0; i < 3; i++){
@@ -67,5 +67,5 @@ function writeYourGenres(){
     }
 }
 
-writeYourGenres();
-console.log(personalMovieDB.genres);
+// writeYourGenres();
+// console.log(personalMovieDB.genres);
